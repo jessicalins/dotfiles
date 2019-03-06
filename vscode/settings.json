@@ -1,0 +1,20 @@
+{
+    "breadcrumbs.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "afterDelay",
+    "go.formatTool": "gofmt",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "[markdown]": {
+        "editor.fontFamily": "iA Writer Duospace, monospace",
+        "editor.lineNumbers": "off",
+        "editor.rulers": [],
+        "editor.fontSize": 14,
+        "editor.lineHeight": 25,
+        "editor.quickSuggestions": false,
+    },
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Atom One Dark",
+    "zenMode.fullScreen": false,
+}
