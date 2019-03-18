@@ -2,6 +2,16 @@
     "breadcrumbs.enabled": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
     "files.autoSave": "afterDelay",
     "go.formatTool": "gofmt",
     "html.format.indentHandlebars": true,
