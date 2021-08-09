@@ -1,19 +1,45 @@
 {
+    "gitProjectManager.baseProjectsFolders": [
+        "/home/jessica/workspace/"
+    ],
+    "gitProjectManager.openInNewWindow": true,
     "breadcrumbs.enabled": true,
+    // Editor
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.minimap.enabled": false, // removes minimap
+    "editor.renderIndentGuides": false, // removes indent guides
+    "editor.renderLineHighlight": "none", // removes line highlight
+    "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+    "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+    "editor.folding": false, // removes the folding feature
+    "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+    "editor.matchBrackets": false, // removes the highlight of matching brackets (I use Subtle Match Brackets extension for this)
+    "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
+    "editor.maxTokenizationLineLength": 80000,
+    "editor.renderWhitespace": "trailing", //none?
+    // ESLint
+    "eslint.alwaysShowStatus": true,
     "eslint.packageManager": "yarn",
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
+        "vue"
     ],
-    "files.autoSave": "afterDelay",
-    "go.formatTool": "gofmt",
+    "files.autoSave": "onFocusChange",
+    // Go
+    "go.lintTool": "golangci-lint",
+    "go.useLanguageServer": true,
+    "gopls": {
+        "ui.completion.usePlaceholders": true,
+        "expandWorkspaceToModule": true,
+    },
+    // Python
+    "python.linting.mypyEnabled": true,
     "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
     "[markdown]": {
@@ -24,7 +50,37 @@
         "editor.lineHeight": 25,
         "editor.quickSuggestions": false,
     },
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Atom One Dark",
+    // Zen Mode config
     "zenMode.fullScreen": false,
+    "zenMode.silentNotifications": true,
+    // Terminal
+    "terminal.integrated.rightClickBehavior": "paste",
+    "window.titleBarStyle": "custom",
+    "vetur.format.defaultFormatter.css": "none",
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.less": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatter.postcss": "none",
+    "vetur.format.defaultFormatter.scss": "none",
+    "vetur.format.defaultFormatter.ts": "none",
+    "vetur.format.defaultFormatter.stylus": "none",
+    "liveshare.featureSet": "insiders",
+    "extensions.ignoreRecommendations": false,
+    // Workbench
+    "workbench.activityBar.visible": false, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+    "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+    "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
+    "workbench.statusBar.visible": false, // removes the status bar
+    "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
+    "workbench.colorCustomizations": {},
+    "materialTheme.accent": "Remove accents",
+    "workbench.colorTheme": "One Dark Pro",
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
